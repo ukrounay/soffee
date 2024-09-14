@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* fonts */
+body {font-family: 'Montserrat Alternates', sans-serif !important;}
+h1 {font-family: 'Caveat', cursive !important;}
+h3 {text-align: center; padding: 2rem 0;}
+
+
+/* navbar */
+.nav-container {box-shadow: 0px 0px 10px -5px #1f1f1f50;}
+.lite-button {background-color: transparent; border: none !important;}
+.lite-button.active, .lite-button:hover {background-color: #c8bd7740 !important;}
+.logo {
+    display: inline-block;
+    width: auto;
+    height: 2rem;
+}
+.logo svg {width: auto; height: 100%;}
+.logo path {fill: #1f1f1f}
+.nav-logo {padding-bottom: 0.3rem;}
+
+
+/* header */
+#intro {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.intro-bg {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: brightness(0.35) blur(2px);
+}
+.intro-header {font-size: calc(3rem + 0.5vw);}
+.intro-text {font-size: calc(1rem + 0.5vw);}
+.intro-cta .btn {
+    border: none !important;
+    outline: 1px solid transparent; 
+    transition: 0.2s ease-out;
+    background-color: #f1f1f1 !important; 
+    color: #1f1f1f !important;
+}
+.intro-cta .btn:hover {outline: 5px solid #f1f1f150}
+
+
+/* advantages */
+.advantage {
+    min-height: 360px; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px -120px 100px #1c1c18;
+    position: relative;
+} 
+#advantage-1 {background-image: url(../img/adv-1.jpg); background-position: center;}
+#advantage-2 {background-image: url(../img/adv-2.jpg); background-position: center bottom;}
+#advantage-3 {background-image: url(../img/adv-3.jpg); background-position: center 75%;}
+.advantages-label {
+    width: calc(100% - 6rem); 
+    height: auto; 
+    position: absolute;
+    left: 3rem;
+    bottom: 3rem;
+    font-size: calc(1.2rem + 0.5vw);
+    color: #f1f1f1;
+}
+
+
+/* rent form */
+.rent-form {max-width: 600px; margin: auto;}
+.form-control, .form-select {
+    border: 1px solid #1c1c1840 !important;
+}
+.form-control:focus, .form-select:focus {
+    box-shadow: 0 0 0 0.25rem #c8bd7730 !important;
+}
+
+
+/* footer */
+footer .col-lg-6 {margin: 0 !important;}
+.footer-btn {color: inherit; text-decoration: none;}
+.footer-logo {height: 2.4rem;}
+.footer-logo path {fill: #c8bd77;}
